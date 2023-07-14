@@ -1,8 +1,11 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import type { PropsWithChildren } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+import classNames from 'classnames';
+import type { Metadata } from 'next'
+
+import { pretendard } from '@/styles/font';
+
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -11,12 +14,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: PropsWithChildren) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko">
+      <body className={classNames(pretendard.className)}>{children}</body>
     </html>
   )
 }

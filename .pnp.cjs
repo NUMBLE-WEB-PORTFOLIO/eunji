@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:6.0.0"],\
             ["@typescript-eslint/parser", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:6.0.0"],\
             ["autoprefixer", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:10.4.14"],\
+            ["classnames", "npm:2.3.2"],\
             ["eslint", "npm:8.44.0"],\
             ["eslint-config-next", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:13.4.9"],\
             ["eslint-config-prettier", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:8.8.0"],\
@@ -1353,6 +1354,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["classnames", [\
+        ["npm:2.3.2", {\
+          "packageLocation": "./.yarn/cache/classnames-npm-2.3.2-d2fdae468d-2c62199789.zip/node_modules/classnames/",\
+          "packageDependencies": [\
+            ["classnames", "npm:2.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["clean-stack", [\
         ["npm:2.2.0", {\
           "packageLocation": "./.yarn/cache/clean-stack-npm-2.2.0-a8ce435a5c-2ac8cd2b2f.zip/node_modules/clean-stack/",\
@@ -2312,6 +2322,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:6.0.0"],\
             ["@typescript-eslint/parser", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:6.0.0"],\
             ["autoprefixer", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:10.4.14"],\
+            ["classnames", "npm:2.3.2"],\
             ["eslint", "npm:8.44.0"],\
             ["eslint-config-next", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:13.4.9"],\
             ["eslint-config-prettier", "virtual:5308a609d8065f53d676cf75100623848adf65e24633f3933c3ec28b5229c902f958335d38766dbb920614182af243929788b3ff77671f88b10c0b6c981d8b38#npm:8.8.0"],\
