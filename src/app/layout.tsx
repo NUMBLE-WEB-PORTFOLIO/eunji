@@ -1,11 +1,10 @@
-import type { PropsWithChildren } from 'react'
+import '@/styles/globals.css';
 
 import classNames from 'classnames';
 import type { Metadata } from 'next'
+import type { PropsWithChildren } from 'react'
 
 import { pretendard } from '@/styles/font';
-
-import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
