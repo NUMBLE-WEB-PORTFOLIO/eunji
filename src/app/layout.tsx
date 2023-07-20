@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import type { PropsWithChildren } from 'react';
 
 import { pretendard } from '@/styles/font';
-import Header from '@/components/layout/Header';
+import Banner from '@/components/Banner';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="ko">
       <body className={classNames(pretendard.className)}>
-        <Header />
+        <Banner />
         {children}
       </body>
     </html>

@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
+import { PropsWithChildren } from 'react';
 
 const variants: Variants = {
   offscreen: {
@@ -23,10 +24,13 @@ interface IntroSectionProps {
   title: string;
 }
 
-const IntroSection = ({ title }: IntroSectionProps) => {
+const IntroSection = ({
+  children,
+  title,
+}: PropsWithChildren<IntroSectionProps>) => {
   return (
     <motion.div
-      className="flex justify-center items-center h-screen"
+      className="flex flex-col justify-center items-center h-screen"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
@@ -34,6 +38,7 @@ const IntroSection = ({ title }: IntroSectionProps) => {
       <motion.div className="text-9xl font-black" variants={variants}>
         {title}
       </motion.div>
+      <div>{children}</div>
     </motion.div>
   );
 };
