@@ -1,5 +1,3 @@
-'use client';
-
 import { motion, Variants } from 'framer-motion';
 import { PropsWithChildren } from 'react';
 
@@ -20,27 +18,18 @@ const variants: Variants = {
   },
 };
 
-interface IntroSectionProps {
-  title: string;
-}
-
-const IntroSection = ({
-  children,
-  title,
-}: PropsWithChildren<IntroSectionProps>) => {
+const Card = ({ children }: PropsWithChildren) => {
   return (
     <motion.div
-      className="flex flex-col justify-center items-center h-screen"
+      className="h-64 px-8 py-6 text-lg rounded-lg border-dotted border-2 border-[#0123ff]"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.8 }}
+      variants={variants}
     >
-      <motion.div className="text-9xl font-black" variants={variants}>
-        {title}
-      </motion.div>
-      <div>{children}</div>
+      {children}
     </motion.div>
   );
 };
 
-export default IntroSection;
+export default Card;

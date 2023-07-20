@@ -13,7 +13,7 @@ const Progress = () => {
 
   return (
     <motion.div
-      className="fixed left-0 right-0 bottom-0 h-1 bg-white"
+      className="fixed left-0 right-0 bottom-0 h-2 bg-[#0123ff]"
       style={{ scaleX }}
     />
   );

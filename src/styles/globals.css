@@ -60,7 +60,7 @@ section {
 .parallax .scroller {
   text-transform: uppercase;
   display: flex;
-  gap: 1rem;
+  gap: 0.6rem;
   white-space: nowrap;
 }
 
