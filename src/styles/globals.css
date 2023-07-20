@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-color: #fcfcfc;
+  --main-text-color: #0123ff;
+}
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -13,6 +18,53 @@ html,
 body {
   margin: 0;
   padding: 0;
-  color: #d1c7c7;
-  background-color: #171414;
+  color: var(--main-text-color);
+  background: var(--bg-color);
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+*::selection {
+  color: var(--bg-color);
+  background: var(--main-text-color);
+  opacity: 1 !important;
+}
+
+*::-moz-selection {
+  color: var(--bg-color);
+  background: var(--main-text-color);
+  opacity: 1 !important;
+}
+
+section {
+  padding-top: 85vh;
+  padding-bottom: 85vh;
+  position: relative;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax .scroller {
+  text-transform: uppercase;
+  display: flex;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
 }
